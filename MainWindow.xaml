@@ -1,0 +1,32 @@
+﻿<Window x:Class="SmartDevices.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SmartDevices"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid Margin="10">
+        <StackPanel>
+            <TextBlock Text="Smart Home Device Manager" FontSize="20" Margin="0,0,0,20" />
+
+            <!-- Device Name -->
+            <TextBlock Text="Device Name:" />
+            <TextBox x:Name="DeviceNameTextBox" Margin="0,0,0,10" />
+
+            <!-- Device Status -->
+            <TextBlock Text="Device Status:" />
+            <TextBox x:Name="DeviceStatusTextBox" Margin="0,0,0,10" />
+
+            <!-- Buttons -->
+            <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
+                <Button Content="Add Device" Width="100" Click="AddDevice_Click" />
+                <Button Content="Update Device" Width="100" Margin="10,0,0,0" Click="UpdateDevice_Click" />
+                <Button Content="Remove Device" Width="100" Margin="10,0,0,0" Click="RemoveDevice_Click" />
+            </StackPanel>
+
+            <!-- Device List -->
+            <ListBox x:Name="DeviceListBox" Height="200" />
+        </StackPanel>
+    </Grid>
+</Window>
