@@ -1,1 +1,1 @@
-# SmartDevices
+# ICE Task - SmartHome Management - Custom Dictionary
